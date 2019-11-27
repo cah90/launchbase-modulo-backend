@@ -34,6 +34,6 @@ server.get('/portfolio', function(req, res) {
   return res.render('portfolio', { items: videos })
 })
 
-server.listen(5000, function(){
+server.listen(process.env.PORT || 5000, function(){
   console.log('server is running')
 })
